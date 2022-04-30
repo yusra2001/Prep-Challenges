@@ -28,57 +28,12 @@
 
 const customerAndAge = (obj) => {
   // write your code here
-  ////////
-  function splitString(stringToSplit, separator) {
-    var arrayOfStrings = stringToSplit.split(separator);
-  
-    console.log("Customer Name :Romio Joliat , Age :35");
- console.log(', Age :"' + separator + '"');
-    console.log('The array has ' + arrayOfStrings.length + ' elements: ' + arrayOfStrings.join(' / '));
+  var array  = [];
+  for (let key in obj) {
+    array.push(`Customer Name :${key} , Age :${obj[key]}`)
   }
-  
-  // var tempestString = 'Oh brave new world that has such people in it.';
-  // var monthString = 'Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec';
-  
-  var space = ' ';
-   var comma = ',';
-  
-   splitString(obj, space);
-   splitString(tempestString);
-   splitString(monthString, comma);
-  ///////////////////////////////
-  // obj.prototype.render=function(){
-
-  //   // document.write(`<h2>${this.employeeID}<h2/>`)
- 
-  //   document.write(`<h2> Customer Name : ${this.customerAndAge} , Age : ${this.customerAndAge}<h2/>`)
-    
-  //   //document.write(`<h2>employee ID ${this.employeeID}<h2/>`)
-     
- 
-  //  }
-  //////////
-  // function smartSplitAll (obj) {
-  //   var newArr = [];
-  
-  //   for (var i = 0; i < obj.length; i++) {
-  //     // expecting string array
-  //     var str = ob[i].trim();
-  
-  //     // split the string if it has multiple words
-  //     if (str.indexOf(' ') > -1)
-  //         newArr = newArr.concat(str.split(/\s+/));
-  
-  //     else 
-  //         newArr.push(str);
-  //   }
-  
-  //   return newArr;
-  // }
-  
-  // console.log(smartSplitAll(["firstName lastName", "anotherString"]);
-  // /////////////////
-
+  return array;
+};
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------

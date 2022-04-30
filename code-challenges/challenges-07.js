@@ -26,6 +26,7 @@ const objLat = (obj) => {
      // write your code here
      let Output = "my name is "+ obj.firstName +" " + obj.lastName + " I am " + obj.age + " YO, and I love " + obj.hobby + ".";
     return (Output);
+    
  };
 // -------------------------------------------------------------------------------------------------------
 
