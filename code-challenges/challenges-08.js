@@ -33,6 +33,8 @@ const customerAndAge = (obj) => {
     array.push(`Customer Name :${key} , Age :${obj[key]}`)
   }
   return array;
+
+  
 };
 // -------------------------------------------------------------------------------------------------------
 
