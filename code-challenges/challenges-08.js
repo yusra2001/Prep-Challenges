@@ -29,23 +29,11 @@
 const customerAndAge = (obj) => {
   // write your code here
   ////////
-  function splitString(stringToSplit, separator) {
-    var arrayOfStrings = stringToSplit.split(separator);
-  
-    console.log("Customer Name :Romio Joliat , Age :35");
- console.log(', Age :"' + separator + '"');
-    console.log('The array has ' + arrayOfStrings.length + ' elements: ' + arrayOfStrings.join(' / '));
+  var array  = [];
+  for (let key in obj) {
+    array.push(`Customer Name :${key} , Age :${obj[key]}`)
   }
-  
-  // var tempestString = 'Oh brave new world that has such people in it.';
-  // var monthString = 'Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec';
-  
-  var space = ' ';
-   var comma = ',';
-  
-   splitString(obj, space);
-   splitString(tempestString);
-   splitString(monthString, comma);
+  return array;};
   ///////////////////////////////
   // obj.prototype.render=function(){
 
